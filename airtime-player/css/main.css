@@ -1,0 +1,396 @@
+body {
+	background-color: rgb(220, 209, 195);
+
+	background: url(https://wallpaperscraft.com/image/spots_background_light_blur_68629_1920x1080.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+section {
+	margin: 20px 0;
+}
+
+.airtime-component {
+	width: 920px;
+	margin: 20% auto;
+}
+
+/*--------------------------------------------------------------------------------------------------
+	FOR FONTS
+--------------------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url(http://www.radiojar.com/wrappers/api-plugins/v1/font/fontawesome-webfont.eot?v=3.1.0);
+    src: url(http://www.radiojar.com/wrappers/api-plugins/v1/font/fontawesome-webfont.eot?#iefix&v=3.1.0) format('embedded-opentype'), url(http://www.radiojar.com/wrappers/api-plugins/v1/font/fontawesome-webfont.woff?v=3.1.0) format('woff'), url(http://www.radiojar.com/wrappers/api-plugins/v1/font/fontawesome-webfont.ttf?v=3.1.0) format('truetype'), url(http://www.radiojar.com/wrappers/api-plugins/v1/font/fontawesome-webfont.svg#fontawesomeregular?v=3.1.0) format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+}
+.font-emphasis {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-style: normal
+}
+.clearfix {
+    *zoom: 1
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+.clearfix:after {
+    clear: both
+}
+.hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0
+}
+.input-block-level {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.pull-right {
+    float: right
+}
+.pull-left {
+    float: left
+}
+.hide {
+    display: none
+}
+.show {
+    display: block
+}
+.invisible {
+    visibility: hidden
+}
+.affix {
+    position: fixed
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+	line-height: 1;
+	vertical-align: middle;
+	text-decoration: none;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    *margin-right: .3em
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none
+}
+.icon-large:before {
+    vertical-align: -10%;
+    font-size: 1.3333333333333333em
+}
+a [class^="icon-"],
+a [class*=" icon-"],
+a [class^="icon-"]:before,
+a [class*=" icon-"]:before {
+    display: inline
+}
+[class^="icon-"].icon-fixed-width,
+[class*=" icon-"].icon-fixed-width {
+    display: inline-block;
+    width: 1.2857142857142858em;
+    text-align: center
+}
+[class^="icon-"].icon-fixed-width.icon-large,
+[class*=" icon-"].icon-fixed-width.icon-large {
+    width: 1.5714285714285714em
+}
+ul.icons-ul {
+    list-style-type: none;
+    text-indent: -.7142857142857143em;
+    margin-left: 2.142857142857143em
+}
+ul.icons-ul>li .icon-li {
+    width: .7142857142857143em;
+    display: inline-block;
+    text-align: center
+}
+[class^="icon-"].hide,
+[class*=" icon-"].hide {
+    display: none
+}
+.icon-muted {
+    color: #eee
+}
+.icon-light {
+    color: #fff
+}
+.icon-dark {
+    color: #333
+}
+.icon-border {
+    border: solid 1px #eee;
+    padding: .2em .25em .15em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px
+}
+.icon-2x {
+    font-size: 2em
+}
+.icon-2x.icon-border {
+    border-width: 2px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px
+}
+.icon-3x {
+    font-size: 3em
+}
+.icon-3x.icon-border {
+    border-width: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+.icon-4x {
+    font-size: 4em
+}
+.icon-4x.icon-border {
+    border-width: 4px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px
+}
+.icon-5x {
+    font-size: 5em
+}
+.icon-5x.icon-border {
+    border-width: 5px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px
+}
+.pull-right {
+    float: right
+}
+.pull-left {
+    float: left
+}
+[class^="icon-"].pull-left,
+[class*=" icon-"].pull-left {
+    margin-right: .3em
+}
+[class^="icon-"].pull-right,
+[class*=" icon-"].pull-right {
+    margin-left: .3em
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: sub;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    margin-top: 0
+}
+.icon-play:before {
+    content: "\f04b"
+}
+.icon-pause:before {
+    content: "\f04c"
+}
+.icon-stop:before {
+    content: "\f04d"
+}
+.icon-volume-up:before {
+    content: "\f028"
+}
+.icon-volume-off:before {
+    content: "\f026"
+}
+.icon-calendar:before {
+    content: "\f073"
+}
+.icon-external-link:before {
+    content: "\f08e"
+}
+.icon-time:before {
+    content: "\f017"
+}
+.icon-microphone:before {
+    content: "\f130"
+}
+.icon-globe:before {
+    content: "\f0ac"
+}
+
+.icon-popup:before {
+    content: "\e9dc";
+    content: "\f08e";
+}
+
+/*--------------------------------------------------------------------------------------------------
+	FOR PLAYER
+--------------------------------------------------------------------------------------------------*/
+.jp-audio .jp-controls,
+.jp-audio .playing-now {
+	/*width: 380px;*/
+	padding: 0;
+	float: left;
+}
+
+.jp-controls li {
+	display: inline-block;
+	padding: 30px;
+	border-right: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.jp-controls .volume-control {
+	width: 32px;
+}
+
+.jp-controls li a {
+	color: #444444;
+	text-decoration: none;
+	vertical-align: super;
+    line-height: 1;
+	-webkit-transition: color 0.25s;
+    transition: color 0.25s;
+}
+
+.jp-controls li a:hover {
+	color: #0091ff;
+}
+
+.jp-controls li a .icon-play {
+    margin: 0 10px;
+}
+.jp-controls li a .icon-pause {
+    margin: 0 9px;
+}
+
+.jp-audio .jp-interface {
+	border-bottom: 2px solid;
+	height: 96px;
+	position: relative;
+	overflow: hidden;
+}
+
+.jp-audio {
+	width: 920px;
+}
+
+/*--------------------------------------------------------------------------------------------------
+	FOR TRACK INFORMATION
+--------------------------------------------------------------------------------------------------*/
+.playing-now {
+	display: inline-block
+}
+
+.playing-now h4 {
+	margin: 0;
+	color: #0091ff;
+	letter-spacing: 1px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.playing-now .track-info {
+	padding-left: 20px;
+	width: 400px;
+}
+
+.playing-now .track-info p {
+	display: block;
+	margin: 0;
+	color: rgba(68, 68, 68, 0.5);
+	font-weight: bold;
+	font-size: 14px;
+	word-wrap: break-word;
+}
+
+.playing-now .track-info p .current {
+	/*width: 350px;*/
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.playing-now .track-info p .current:after {
+	content: '...';
+}
+
+.playing-now .track-info p span {
+	color: #444444;
+	display: block;
+}
+
+.playing-now #time-elapsed,
+.playing-now #time-remaining {
+	display: none;
+}
+.playing-now .cover img {
+		width: 100px;
+		height: auto;
+}
+
+.playing-now .cover,
+.playing-now .track-info {
+	display: inline-block;
+	vertical-align: middle;
+}
+.playing-now .cover .cover-pic {
+	float: left;
+	overflow: hidden;
+	height: 96px;
+}
+
+
+
+/* Structure/Layout
+------------------------------------------------------ */
+#player { background: white; background: rgba(255, 255, 255, 0.8); border-radius: 5px 5px 0 0; margin-bottom: 1px; }
+#player .module { margin-bottom: 0; max-height: 90px; overflow: hidden; }
+
+/* Player */
+.playingNow .rjp-player-container, .playingNow .rjp-playingNow { float: left; }
+.playingNow ul { list-style: none outside none; margin: 0; padding: 0; }
+.playingNow ul li { display: inline-block; padding: 30px; border-right: 1px solid rgba(68, 68, 68, 0.2); }
+.playingNow ul i:before { font-family: 'nuIcons'; font-size: 30px; line-height: 1; vertical-align: middle; text-decoration: none; }
+.playingNow ul a { color: #444444; }
+.playingNow ul a:hover { color: #0091ff; }
+.playingNow ul a.jp-play i:before, .playingNow ul a.jp-pause i:before { font-size: 28px; }
+.playingNow #rj-cover { float: left; margin-right: 20px; }
+.playingNow #rj-cover img { width: 100px; height: auto; }
+.playingNow .rjp-trackinfo-container { overflow: hidden; padding: 16px 0 0 1px; float: left; }
+.playingNow .rjp-trackinfo-container h4 { color: #0091ff; letter-spacing: 1px; font-size: 12px; text-transform: uppercase; }
+.playingNow .rjp-trackinfo-container p { display: inline-block; margin: 0; color: rgba(68, 68, 68, 0.5); font-weight: bold; font-size: 14px; overflow: hidden; word-wrap: break-word; }
+.playingNow .rjp-trackinfo-container p span { color: #444444; display: block; }
+
+/* onAir */
+.onAirMod { border-left: 1px solid rgba(68, 68, 68, 0.2); }
+.onAirMod .moduleItemBody { padding: 12px 1.875em 12px 20px; }
+.onAirMod .avatar { float: right; border-radius: 63px; height: 66px; overflow: hidden; border: 3px solid rgba(0, 0, 0, 0.2); }
+.onAirMod .avatar img { width: 60px; height: auto; }
+.onAirMod .djBody { display: inline-block; overflow: hidden; padding: 4px 1px 0 0; }
+.onAirMod .djBody h4 { color: #0091ff; letter-spacing: 1px; font-size: 12px; text-transform: uppercase; }
+.onAirMod .djBody .dj { font-weight: bold; font-size: 14px; }
+.onAirMod .djBody .nickname { color: rgba(68, 68, 68, 0.5); font-weight: bold; font-size: 14px; }
+
