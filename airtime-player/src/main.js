@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$("#jquery_jplayer_1").jPlayer({
+	$("#myAirTimePlayer").jPlayer({
 		ready: function (event) {
 			$(this).jPlayer("setMedia", {
 				title: "Bubble",
@@ -19,7 +19,7 @@ $(document).ready(function(){
 		toggleDuration: true
 	});
 
-	$("#headerLiveHolder").airtimeLiveTrackInfo({
+	$("#playingNowAirTime").airtimeLiveTrackInfo({
 		sourceDomain: "http://stream1.itacafm.com",
 		text: {
 			onAirNow:"Now Playing",
@@ -28,5 +28,16 @@ $(document).ready(function(){
 			next:"Next"
 		},
 		updatePeriod: 1000 //seconds
+	});
+
+	$("#onAirNowAirTime").airtimeLiveInfo({
+		sourceDomain: "http://stream1.itacafm.com",
+		text: {
+			onAirNow:"On Air",
+			offline:"Offline",
+			current:"Current",
+			next:"Next"
+		},
+		updatePeriod: 20 //seconds
 	});
 });

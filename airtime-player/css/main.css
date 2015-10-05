@@ -285,7 +285,7 @@ ul.icons-ul>li .icon-li {
 .jp-controls li a .icon-pause {
     margin: 0 9px;
 }
-
+/*96px*/
 .jp-audio .jp-interface {
 	border-bottom: 2px solid;
 	height: 96px;
@@ -294,13 +294,14 @@ ul.icons-ul>li .icon-li {
 }
 
 .jp-audio {
-	width: 920px;
+	width: 1260px;
 }
 
 /*--------------------------------------------------------------------------------------------------
 	FOR TRACK INFORMATION
 --------------------------------------------------------------------------------------------------*/
-.playing-now {
+.playing-now,
+.on-air {
 	display: inline-block
 }
 
@@ -362,7 +363,47 @@ ul.icons-ul>li .icon-li {
 	height: 96px;
 }
 
+.on-air-container .on-air .avatar {
+	float: right;
+    border-radius: 63px;
+    height: 66px;
+    overflow: hidden;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+}
+.on-air-container .on-air .avatar .show-host-thumb {
+	width: 67px;
+    height: auto;
+    border: none;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.on-air-container {
+	padding: 10px 30px;
+    display: inline-block;
+    float: right;
+}
 
+.on-air-container .show-host {
+	display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    width: 150px;
+}
+
+.on-air-container .show-host h4 {
+	margin: 0;
+	color: #0091ff;
+	letter-spacing: 1px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.on-air-container .show-host .dj-airtime {
+	font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 0;
+}
 
 /* Structure/Layout
 ------------------------------------------------------ */

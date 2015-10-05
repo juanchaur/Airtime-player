@@ -123,14 +123,15 @@ var AIRTIME_API_VERSION = "1.1";
             }
 
             obj.empty();
-            obj.append("<h4>"+showStatus+" &gt;&gt;</h4>");
-            obj.append("<ul class='widget now-playing-bar'>" +
-                "<li class='current'>"+options.text.current+": "+currentShowName+
-                "<span id='time-elapsed' class='time-elapsed'>"+timeElapsed+"</span>" +
-                "<span id='time-remaining' class='time-remaining'>"+timeRemaining+"</span>"+
-                "</li>" +
-                "<li class='next'>"+options.text.next+": "+nextShowName+"<span>"+nextShowRange+"</span></li>" +
-                "</ul>");
+            obj.append("<h4>"+showStatus+"</h4>");
+            obj.append('<p class="dj-airtime">' + currentShowName + '</p>');
+            // obj.append("<ul class='widget now-playing-bar'>" +
+            //     "<li class='current'>"+options.text.current+": "+currentShowName+
+            //     "<span id='time-elapsed' class='time-elapsed'>"+timeElapsed+"</span>" +
+            //     "<span id='time-remaining' class='time-remaining'>"+timeRemaining+"</span>"+
+            //     "</li>" +
+            //     "<li class='next'>"+options.text.next+": "+nextShowName+"<span>"+nextShowRange+"</span></li>" +
+            //     "</ul>");
         }
 
         function processData(data){

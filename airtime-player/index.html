@@ -17,7 +17,7 @@
 
 <section class="airtime-component">
 
-	<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	<div id="myAirTimePlayer" class="jp-jplayer"></div>
 	<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 		<div class="jp-type-single">
 			<div class="jp-gui jp-interface">
@@ -46,15 +46,22 @@
 					</li>
 				</ul>
 				<div class="playing-now">
-
 					<div class="cover">
 						<a href="#" class="cover-pic">
 							<!-- <img src="http://radiojar.com/img/sample_images/Radio_Stations_Avatar_BLUE.png" alt="" title=""> -->
-
 							<img src="http://designroast.org/wp-content/uploads/2014/01/flat-castro.png" alt="" title="">
 						</a>
 						</div>
-					<div id="headerLiveHolder" class="track-info" aria-label="title"></div>
+					<div id="playingNowAirTime" class="track-info" aria-label="title"></div>
+				</div>
+				<div class="on-air-container" id="currentShow">
+					<div class="on-air">
+						<span class="avatar">
+							<img class="show-host-thumb" src="http://zizaza.com/cache/big_thumb/iconset/582135/582138/PNG/128/azure/radio_flat_multimedia_icon_png_radio_png_radio_icon.png">
+						</span>
+						<div id="onAirNowAirTime" class="show-host"></div>
+
+					</div>
 				</div>
 			</div>
 			<div class="jp-no-solution">
